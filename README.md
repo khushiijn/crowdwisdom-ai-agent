@@ -62,6 +62,8 @@ Each task includes guardrails to ensure:
 <img width="1590" height="834" alt="Screenshot 2025-08-27 194703" src="https://github.com/user-attachments/assets/5585f3a2-cb6f-4179-b171-d87c4cf1198e" />
 <img width="1538" height="835" alt="Screenshot 2025-08-27 194715" src="https://github.com/user-attachments/assets/38c4e4cf-be27-4560-a19f-a7add0079472" />
 <img width="1576" height="654" alt="Screenshot 2025-08-27 194723" src="https://github.com/user-attachments/assets/345e5fd6-1b87-49d9-b480-8c9e2416f9f0" />
+<img width="1195" height="870" alt="Screenshot 2025-08-28 002757" src="https://github.com/user-attachments/assets/4cf7bb08-1a5a-4723-b01f-d4afca99c9db" />
+
 
 ## 🎥 Demo Video
 A short demo video showing the pipeline running and posting to Telegram.  
