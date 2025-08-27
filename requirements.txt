@@ -1,0 +1,6 @@
+crewai
+litellm
+tavily-python
+pydantic
+requests
+python-telegram-bot
