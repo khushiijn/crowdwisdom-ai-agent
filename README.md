@@ -41,7 +41,7 @@ Each task includes guardrails to ensure:
 ## 🔑 Setup
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/crowdwisdom-ai-agent.git
+   git clone https://github.com/khushiijn/crowdwisdom-ai-agent.git
    cd crowdwisdom-ai-agent
 
 2. Install dependencies:
@@ -65,8 +65,5 @@ Each task includes guardrails to ensure:
 
 ## 🎥 Demo Video
 A short demo video showing the pipeline running and posting to Telegram.  
-👉 [Watch the demo here]([https://drive.google.com/your-public-link](https://drive.google.com/file/d/1B1qyRRf8R_KBYAqwU6EAn6-sOTLQtNae/view?usp=sharing))
-
-
-
-
+👉 [Watch the demo here]
+https://drive.google.com/file/d/1B1qyRRf8R_KBYAqwU6EAn6-sOTLQtNae/view?usp=sharing
