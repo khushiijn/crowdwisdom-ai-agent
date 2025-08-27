@@ -33,6 +33,20 @@ tavily_key = os.getenv("TAVILY_API_KEY")
 telegram_token = os.getenv("TELEGRAM_BOT_TOKEN")
 telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
+
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+payload = {
+    "chat_id": CHAT_ID,
+    "text": "🚀 Test message from CrowdWisdom pipeline"
+}
+
+resp = requests.post(url, json=payload)
+print(resp.json())
+
+
 # CrewAI imports
 try:
     from crewai import Agent, Task, Crew, Process, TaskOutput
@@ -264,14 +278,23 @@ crew = Crew(
 # -----------------------------
 # Telegram Helper
 # -----------------------------
-def send_to_telegram(bot_token: str, chat_id: str, text: str) -> Dict[str, Any]:
-    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    payload = {"chat_id": chat_id, "text": text, "parse_mode": "Markdown"}
-    resp = requests.post(url, json=payload, timeout=20)
-    try:
-        return resp.json()
-    except Exception:
-        return {"ok": False, "status_code": resp.status_code, "text": resp.text}
+
+
+def send_to_telegram(text: str):
+    BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+    CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    payload = {
+        "chat_id": CHAT_ID,
+        "text": text,
+        "parse_mode": "Markdown"  # optional, allows formatting
+    }
+
+    resp = requests.post(url, json=payload)
+    print("Telegram response:", resp.json())
+
+
 
 # -----------------------------
 # Runner
